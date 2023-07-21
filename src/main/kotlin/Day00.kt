@@ -1,10 +1,10 @@
 fun main() {
     val input = readInput("Day00")
-    println(Day01.part1(input))
-    println(Day01.part2(input))
+    println(Day00.part1(input))
+    println(Day00.part2(input))
 }
 
-class Day01 {
+class Day00 {
     companion object {
         fun part1(input: List<String>): Int {
             return input.size

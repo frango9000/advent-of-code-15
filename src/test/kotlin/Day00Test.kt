@@ -8,11 +8,11 @@ class Day00Test {
 
     @Test
     fun part1() {
-        check(Day01.part1(testInput) == 1)
+        check(Day00.part1(testInput) == 1)
     }
 
     @Test
     fun part2() {
-        check(Day01.part2(testInput) == 2)
+        check(Day00.part2(testInput) == 2)
     }
 }
