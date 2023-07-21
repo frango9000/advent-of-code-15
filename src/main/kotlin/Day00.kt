@@ -1,7 +1,7 @@
 fun main() {
     val input = readInput("Day00")
-    println(Day00.part1(input))
-    println(Day00.part2(input))
+    Day00.part1(input).println()
+    Day00.part2(input).println()
 }
 
 class Day00 {

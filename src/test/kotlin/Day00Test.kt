@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class Day00Test {
@@ -8,11 +9,11 @@ class Day00Test {
 
     @Test
     fun part1() {
-        check(Day00.part1(testInput) == 1)
+        assertEquals(1, Day00.part1(testInput))
     }
 
     @Test
     fun part2() {
-        check(Day00.part2(testInput) == 2)
+        assertEquals(2, Day00.part2(testInput))
     }
 }
