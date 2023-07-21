@@ -5,16 +5,16 @@ class Day01Test {
 
     @Test
     fun part1() {
-        assertEquals( 0,Day01.part1(listOf("(())")))
-        assertEquals( 0,Day01.part1(listOf("()()")))
-        assertEquals( 3,Day01.part1(listOf("(((")))
-        assertEquals( 3,Day01.part1(listOf("(()(()(")))
-        assertEquals( 3,Day01.part1(listOf("))(((((")))
-        assertEquals( -1,Day01.part1(listOf("())")))
-        assertEquals( -1,Day01.part1(listOf("))(")))
-        assertEquals( -1,Day01.part1(listOf("))(")))
-        assertEquals( -3,Day01.part1(listOf(")))")))
-        assertEquals( -3,Day01.part1(listOf(")())())")))
+        assertEquals(0, Day01.part1(listOf("(())")))
+        assertEquals(0, Day01.part1(listOf("()()")))
+        assertEquals(3, Day01.part1(listOf("(((")))
+        assertEquals(3, Day01.part1(listOf("(()(()(")))
+        assertEquals(3, Day01.part1(listOf("))(((((")))
+        assertEquals(-1, Day01.part1(listOf("())")))
+        assertEquals(-1, Day01.part1(listOf("))(")))
+        assertEquals(-1, Day01.part1(listOf("))(")))
+        assertEquals(-3, Day01.part1(listOf(")))")))
+        assertEquals(-3, Day01.part1(listOf(")())())")))
     }
 
     @Test
