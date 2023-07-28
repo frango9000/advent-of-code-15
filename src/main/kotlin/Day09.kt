@@ -52,11 +52,11 @@ private fun Node.findShortestDistance(visited: MutableList<String>, progress: In
 }
 
 private fun MutableMap<String, Node>.findLongestDistance(): Int {
-    var shortestDistance = 0
+    var longestDistance = 0
     this.forEach {
-        shortestDistance = shortestDistance.coerceAtLeast(it.value.findLongestDistance(mutableListOf(), 0))
+        longestDistance = longestDistance.coerceAtLeast(it.value.findLongestDistance(mutableListOf(), 0))
     }
-    return shortestDistance
+    return longestDistance
 }
 
 private fun Node.findLongestDistance(visited: MutableList<String>, progress: Int): Int {
@@ -66,11 +66,11 @@ private fun Node.findLongestDistance(visited: MutableList<String>, progress: Int
 
     val newVisited = visited.toMutableList()
     newVisited.add(this.name)
-    var shortestDistance = 0
+    var longestDistance = 0
     this.paths.filter { !newVisited.contains(it.key.name) }.forEach { (node, distance) ->
-        shortestDistance = shortestDistance.coerceAtLeast(node.findLongestDistance(newVisited, progress + distance))
+        longestDistance = longestDistance.coerceAtLeast(node.findLongestDistance(newVisited, progress + distance))
     }
-    return shortestDistance
+    return longestDistance
 }
 
 
