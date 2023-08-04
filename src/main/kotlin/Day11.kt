@@ -47,8 +47,6 @@ fun Long.toAbc(): String {
         num /= 26
         if (num > 0) num++
     }
-//    sb.replaceFirst("^a+".toRegex(), "")
-//    if (sb.isEmpty()) return "a"
     return sb.reverse().toString()
 }
 
