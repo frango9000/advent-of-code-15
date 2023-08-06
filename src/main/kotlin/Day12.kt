@@ -55,6 +55,6 @@ class Day12 {
     }
 }
 
-private fun String.getNumbers(): List<Int> {
+fun String.getNumbers(): List<Int> {
     return """-?\d+""".toRegex().findAll(this).map { it.value.toInt() }.toList()
 }
